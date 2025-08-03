@@ -52,7 +52,7 @@ class OpeBlb:
     OpeBlb.posdat = OpeBlb.posdat + 1
     return dattgt
 
-LibMid.dicprc.append({"key": "xoxxox.OpeBlb.setdir", "frm": "LibMid.plugin['xoxxox_libblb'].OpeBlb.setdir(values[dicreq['keydat']], dicreq['target'])", "syn": True})
-LibMid.dicprc.append({"key": "xoxxox.OpeBlb.getdir", "frm": "LibMid.plugin['xoxxox_libblb'].OpeBlb.getdir(dicreq['target'])", "syn": True})
-LibMid.dicprc.append({"key": "xoxxox.OpeBlb.setdis", "frm": "LibMid.plugin['xoxxox_libblb'].OpeBlb.setdis(values[dicreq['keydat']], dicreq['keydat'],  dicreq['extdat'], dicreq['folder'])", "syn": True})
-LibMid.dicprc.append({"key": "xoxxox.OpeBlb.getdis", "frm": "LibMid.plugin['xoxxox_libblb'].OpeBlb.getdis(dicreq['extdat'], dicreq['folder'])", "syn": True})
+LibMid.dicprc["xoxxox.OpeBlb.setdir"] = {"frm": "xoxxox_libblb.OpeBlb.setdir", "arg": ["keydat"], "cnf": ["target"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.getdir"] = {"frm": "xoxxox_libblb.OpeBlb.getdir", "cnf": ["target"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.setdis"] = {"frm": "xoxxox_libblb.OpeBlb.setdis", "arg": ["keydat"], "cnf": ["extdat", "folder"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.getdis"] = {"frm": "xoxxox_libblb.OpeBlb.getdis", "cnf": ["extdat", "folder"], "syn": True}

@@ -22,5 +22,5 @@ class OpeMem:
     except Exception as e:
       return target
 
-LibMid.dicprc.append({"key": "xoxxox.OpeMem.setmem", "frm": "LibMid.plugin['xoxxox_libmem'].OpeMem.setmem(values[dicreq['keydat']], dicreq['keymem'], memory)", "syn": True})
-LibMid.dicprc.append({"key": "xoxxox.OpeMem.getmem", "frm": "LibMid.plugin['xoxxox_libmem'].OpeMem.getmem(values[dicreq['keydat']], dicreq['keymem'], memory)", "syn": True})
+LibMid.dicprc["xoxxox.OpeMem.setmem"] = {"frm": "xoxxox_libmem.OpeMem.setmem", "arg": ["keydat"], "mem": ["keymem"], "syn": True}
+LibMid.dicprc["xoxxox.OpeMem.getmem"] = {"frm": "xoxxox_libmem.OpeMem.getmem", "arg": ["keydat"], "mem": ["keymem"], "syn": True}
