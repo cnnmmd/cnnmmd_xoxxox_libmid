@@ -54,5 +54,5 @@ class OpeBlb:
 
 LibMid.dicprc["xoxxox.OpeBlb.setdir"] = {"frm": "xoxxox_libblb.OpeBlb.setdir", "arg": ["keydat"], "cnf": ["target"], "syn": True}
 LibMid.dicprc["xoxxox.OpeBlb.getdir"] = {"frm": "xoxxox_libblb.OpeBlb.getdir", "cnf": ["target"], "syn": True}
-LibMid.dicprc["xoxxox.OpeBlb.setdis"] = {"frm": "xoxxox_libblb.OpeBlb.setdis", "arg": ["keydat"], "cnf": ["extdat", "folder"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.setdis"] = {"frm": "xoxxox_libblb.OpeBlb.setdis", "arg": ["keydat"], "cnf": ["keydat", "extdat", "folder"], "syn": True}
 LibMid.dicprc["xoxxox.OpeBlb.getdis"] = {"frm": "xoxxox_libblb.OpeBlb.getdis", "cnf": ["extdat", "folder"], "syn": True}
