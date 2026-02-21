@@ -107,11 +107,11 @@ class CnvVce:
       raise Exception(f"err: {e.decode('utf-8')}")
     return datwav
 
-LibMid.dicprc["xoxxox.CnvVce.webwav"] = {"frm": "xoxxox_libcnv.CnvVce.webwav", "arg": ["keydat"], "syn": True}
-LibMid.dicprc["xoxxox.CnvVce.wavpcm"] = {"frm": "xoxxox_libcnv.CnvVce.wavpcm", "arg": ["keydat"], "syn": True}
-LibMid.dicprc["xoxxox.CnvVce.pcmwav"] = {"frm": "xoxxox_libcnv.CnvVce.pcmwav", "arg": ["keydat"], "syn": True}
-LibMid.dicprc["xoxxox.CnvVce.wavpcl"] = {"frm": "xoxxox_libcnv.CnvVce.wavpcl", "arg": ["keydat"], "syn": True}
-LibMid.dicprc["xoxxox.CnvVce.pclwav"] = {"frm": "xoxxox_libcnv.CnvVce.pclwav", "arg": ["keydat"], "syn": True}
+LibMid.dicprc["xoxxox.CnvVce.webwav"] = {"frm": "xoxxox_libcnv.CnvVce.webwav", "arg": ["keymmd"], "syn": True}
+LibMid.dicprc["xoxxox.CnvVce.wavpcm"] = {"frm": "xoxxox_libcnv.CnvVce.wavpcm", "arg": ["keymmd"], "syn": True}
+LibMid.dicprc["xoxxox.CnvVce.pcmwav"] = {"frm": "xoxxox_libcnv.CnvVce.pcmwav", "arg": ["keymmd"], "syn": True}
+LibMid.dicprc["xoxxox.CnvVce.wavpcl"] = {"frm": "xoxxox_libcnv.CnvVce.wavpcl", "arg": ["keymmd"], "syn": True}
+LibMid.dicprc["xoxxox.CnvVce.pclwav"] = {"frm": "xoxxox_libcnv.CnvVce.pclwav", "arg": ["keymmd"], "syn": True}
 
 #---------------------------------------------------------------------------
 # 処理：変換：イメージ
@@ -136,4 +136,4 @@ class CnvImg:
       raise Exception(f"err: {e.decode('utf-8')}")
     return datimg
 
-LibMid.dicprc["xoxxox.CnvImg.pngjpg"] = {"frm": "xoxxox_libcnv.CnvImg.pngjpg", "arg": ["keydat"], "syn": True}
+LibMid.dicprc["xoxxox.CnvImg.pngjpg"] = {"frm": "xoxxox_libcnv.CnvImg.pngjpg", "arg": ["keymmd"], "syn": True}

@@ -31,8 +31,8 @@ class OpeBlb:
 
   # 機能：データを、ファイルに書き込む（キーを元に（重複ナシ））
   @staticmethod
-  def setdis(dattgt, keydat, extdat, folder):
-    with open(folder + "/" + keydat + extdat, "wb") as f:
+  def setdis(dattgt, keymmd, extdat, folder):
+    with open(folder + "/" + keymmd + extdat, "wb") as f:
       f.write(dattgt)
     return ""
 
@@ -52,7 +52,7 @@ class OpeBlb:
     OpeBlb.posdat = OpeBlb.posdat + 1
     return dattgt
 
-LibMid.dicprc["xoxxox.OpeBlb.setdir"] = {"frm": "xoxxox_libblb.OpeBlb.setdir", "arg": ["keydat"], "cnf": ["target"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.setdir"] = {"frm": "xoxxox_libblb.OpeBlb.setdir", "arg": ["keymmd"], "cnf": ["target"], "syn": True}
 LibMid.dicprc["xoxxox.OpeBlb.getdir"] = {"frm": "xoxxox_libblb.OpeBlb.getdir", "cnf": ["target"], "syn": True}
-LibMid.dicprc["xoxxox.OpeBlb.setdis"] = {"frm": "xoxxox_libblb.OpeBlb.setdis", "arg": ["keydat"], "cnf": ["keydat", "extdat", "folder"], "syn": True}
+LibMid.dicprc["xoxxox.OpeBlb.setdis"] = {"frm": "xoxxox_libblb.OpeBlb.setdis", "arg": ["keymmd"], "cnf": ["keymmd", "extdat", "folder"], "syn": True}
 LibMid.dicprc["xoxxox.OpeBlb.getdis"] = {"frm": "xoxxox_libblb.OpeBlb.getdis", "cnf": ["extdat", "folder"], "syn": True}
